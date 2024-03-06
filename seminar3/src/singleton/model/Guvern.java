@@ -13,9 +13,9 @@ public class Guvern {
         this.nrLuni = nrLuni;
     }
 
-    public static Guvern getInstance() {
+    public static Guvern getInstance(int nrGuvernatori, String numePrimMinistru, int nrLuni) {
         if(instanta==null){
-            instanta=new Guvern(4,"Marcel",12);
+            instanta=new Guvern(nrGuvernatori,numePrimMinistru,nrLuni);
         }
         return instanta;
     }
