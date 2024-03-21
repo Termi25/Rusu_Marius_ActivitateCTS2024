@@ -26,7 +26,6 @@ public class Student extends Aplicant {
 
 	public Student() {
 		super();
-		
 	}
 
 	@Override
