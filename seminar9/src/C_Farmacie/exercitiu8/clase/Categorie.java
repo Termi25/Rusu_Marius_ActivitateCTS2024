@@ -36,7 +36,8 @@ public class Categorie implements StructuraAbstracta{
 
     @Override
     public void afisare(String indent) {
-        System.out.println(indent+"| Categoria "+this.denumireCategorie);
+        System.out.println(indent+"| Categoria "
+                +this.denumireCategorie);
         for(StructuraAbstracta medicament:this.medicamente){
             medicament.afisare(indent+indent);
         }

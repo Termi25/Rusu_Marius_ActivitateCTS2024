@@ -1,6 +1,6 @@
 package B_Restaurant.exercitiu3.implementare;
 
-public class SupaLegume extends Supa{
+public class SupaLegume extends Supa {
     public SupaLegume(String denumire, int cantitateGrame) {
         super(denumire, cantitateGrame);
     }

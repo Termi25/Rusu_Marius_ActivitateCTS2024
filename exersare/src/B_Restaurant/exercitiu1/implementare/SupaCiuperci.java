@@ -1,6 +1,6 @@
 package B_Restaurant.exercitiu1.implementare;
 
-public class SupaCiuperci extends Supa{
+public class SupaCiuperci extends Supa {
 
     protected SupaCiuperci(String denumireSupa, int gramaj) {
         super(denumireSupa,gramaj);

@@ -1,6 +1,6 @@
 package B_Restaurant.exercitiu4.implementare;
 
-public class Client implements AbstractClient{
+public class Client implements AbstractClient {
     private String numeClient;
     private String numarTelefonClient;
 
