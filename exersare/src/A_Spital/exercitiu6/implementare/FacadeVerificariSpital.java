@@ -13,7 +13,7 @@ public class FacadeVerificariSpital {
 
     public void verificaInternarePacient(){
         if(this.pacient.verificaStarePacient()){
-            if(this.medic.cornfirmaInternarePacient(this.pacient)){
+            if(this.medic.confirmaInternarePacient(this.pacient)){
                 if(this.salon.verificaDisponibilitatePat()){
                     System.out.println(this.pacient.getNumePacient()+" este internat intr-un pat dedicat.");
                 }else{

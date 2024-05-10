@@ -13,7 +13,7 @@ public class Medic {
         return numeMedic;
     }
 
-    public boolean cornfirmaInternarePacient(Pacient pacient){
+    public boolean confirmaInternarePacient(Pacient pacient){
         if(pacient.verificaStarePacient()){
             return true;
         }
