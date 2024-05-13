@@ -14,9 +14,9 @@ public abstract class TemplateFarmacie {
         }
     }
 
-    public abstract void primesteReteta(List<Integer> listaMedicamente);
-    public abstract boolean verificaStoc();
-    public abstract void incaseazaBanii();
-    public abstract void actualizeazaStoc();
-    public abstract void emiteBon();
+    protected abstract void primesteReteta(List<Integer> listaMedicamente);
+    protected abstract boolean verificaStoc();
+    protected abstract void incaseazaBanii();
+    protected abstract void actualizeazaStoc();
+    protected abstract void emiteBon();
 }

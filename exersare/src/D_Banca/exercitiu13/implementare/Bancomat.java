@@ -1,7 +1,5 @@
 package D_Banca.exercitiu13.implementare;
 
-import D_Banca.exercitiu13.implementare.stari_bancomat.*;
-
 public class Bancomat {
     int codBancomat;
     String proprietar;
@@ -15,7 +13,7 @@ public class Bancomat {
         this.sumaBani = sumaBani;
     }
 
-    public void setStareBancomat(StareBancomat stareBancomat) {
+    protected void setStareBancomat(StareBancomat stareBancomat) {
         this.stareBancomat = stareBancomat;
     }
 

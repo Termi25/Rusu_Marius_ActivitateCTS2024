@@ -21,13 +21,13 @@ public abstract class TemplateBancomat {
         retrageCardul();
     }
 
-    public abstract void introduceCardul();
+    protected abstract void introduceCardul();
 
-    public abstract void introduceCodulPin();
+    protected abstract void introduceCodulPin();
 
-    public abstract void specificaSumaDeRetras(double sumaCeruta);
+    protected abstract void specificaSumaDeRetras(double sumaCeruta);
 
-    public abstract void retrageBanii();
+    protected abstract void retrageBanii();
 
-    public abstract void retrageCardul();
+    protected abstract void retrageCardul();
 }

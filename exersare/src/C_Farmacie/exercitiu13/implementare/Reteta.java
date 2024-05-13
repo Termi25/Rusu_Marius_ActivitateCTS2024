@@ -11,7 +11,7 @@ public class Reteta {
         this.stareReteta=new RetetaEmisa();
     }
 
-    public void setStareReteta(StareReteta stareReteta) {
+    protected void setStareReteta(StareReteta stareReteta) {
         this.stareReteta = stareReteta;
     }
 

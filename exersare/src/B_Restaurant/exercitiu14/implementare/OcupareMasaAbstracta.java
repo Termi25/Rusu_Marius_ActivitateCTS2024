@@ -8,8 +8,8 @@ public abstract class OcupareMasaAbstracta {
         invitaClientiLaMasa();
     }
 
-    public abstract void curataMasa();
-    public abstract void puneServetele();
-    public abstract void puneTacamuri();
-    public abstract void invitaClientiLaMasa();
+    protected abstract void curataMasa();
+    protected abstract void puneServetele();
+    protected abstract void puneTacamuri();
+    protected abstract void invitaClientiLaMasa();
 }

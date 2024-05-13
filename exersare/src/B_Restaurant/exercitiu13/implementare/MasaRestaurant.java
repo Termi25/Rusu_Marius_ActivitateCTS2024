@@ -9,7 +9,7 @@ public class MasaRestaurant {
         this.stareMasa=new MasaLibera();
     }
 
-    public void setStareMasa(StareMasa stareMasa) {
+    protected void setStareMasa(StareMasa stareMasa) {
         this.stareMasa = stareMasa;
     }
 

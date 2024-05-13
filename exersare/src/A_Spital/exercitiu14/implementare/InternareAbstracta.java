@@ -26,7 +26,7 @@ public abstract class InternareAbstracta {
         }
     }
 
-    public abstract boolean analizeazaPacient(String starePacient);
-    public abstract boolean verificaDisponibilitatePat();
-    public abstract void emiteFisaInternare(String numePacient);
+    protected abstract boolean analizeazaPacient(String starePacient);
+    protected abstract boolean verificaDisponibilitatePat();
+    protected abstract void emiteFisaInternare(String numePacient);
 }
