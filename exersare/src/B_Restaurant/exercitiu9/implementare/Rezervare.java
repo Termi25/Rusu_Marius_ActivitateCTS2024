@@ -13,6 +13,22 @@ public class Rezervare implements RezervareAbstracta{
         this.oraRezervare = oraRezervare;
     }
 
+    public int getNumarPersoane() {
+        return numarPersoane;
+    }
+
+    public String getNumeRezervare() {
+        return numeRezervare;
+    }
+
+    public String getOraRezervare() {
+        return oraRezervare;
+    }
+
+    public String getDataRezervare() {
+        return dataRezervare;
+    }
+
     @Override
     public void realizareRezervare() {
         System.out.println("Rezervare in numele "

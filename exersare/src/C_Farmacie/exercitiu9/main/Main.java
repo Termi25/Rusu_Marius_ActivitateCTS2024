@@ -9,7 +9,8 @@ public class Main {
         ClientAbstract client1=new Client(1,"Manole",false);
         client1.cumparaMedicamente();
 
-        ClientAbstract client2=new ClientProxy(2,"Popescu",false);
-        client2.cumparaMedicamente();
+        ClientAbstract client2=new Client(2,"Popescu",false);
+        ClientAbstract clientProxy=new ClientProxy(client2);
+        clientProxy.cumparaMedicamente();
     }
 }

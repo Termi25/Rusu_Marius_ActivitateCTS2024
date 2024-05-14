@@ -1,16 +1,23 @@
 package C_Farmacie.exercitiu9.implementare;
 
-public class ClientProxy extends ClientAbstract{
-    public ClientProxy(int codClient, String numeClient, boolean areReteta) {
-        super(codClient, numeClient, areReteta);
+public class ClientProxy implements ClientAbstract{
+    private ClientAbstract client;
+
+    public ClientProxy(ClientAbstract client) {
+        this.client = client;
     }
 
     @Override
     public void cumparaMedicamente() {
-        if(areReteta){
-            System.out.println("Clientul "+numeClient+" a cumparat medicamente.");
+        if(this.client.getAreReteta()){
+            this.client.cumparaMedicamente();
         }else{
-            System.out.println("Clientul "+numeClient+" nu poate cumpara medicamente fara reteta.");
+            System.out.println("Clientul nu poate cumpara medicamente fara reteta.");
         }
+    }
+
+    @Override
+    public boolean getAreReteta() {
+        return this.client.getAreReteta();
     }
 }

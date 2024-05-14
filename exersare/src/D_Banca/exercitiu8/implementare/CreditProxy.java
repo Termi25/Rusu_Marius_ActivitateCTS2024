@@ -1,19 +1,23 @@
 package D_Banca.exercitiu8.implementare;
 
-public class CreditProxy extends CreditAbstract{
-    public CreditProxy(String denumire, int numarLuni, String moneda, double valoare) {
-        super(denumire, numarLuni, moneda, valoare);
+public class CreditProxy implements CreditAbstract{
+    private CreditAbstract credit;
+
+    public CreditProxy(CreditAbstract credit) {
+        this.credit = credit;
     }
 
     @Override
     public void realizeazaCredit() {
-        if(moneda.equalsIgnoreCase("RON")){
-            System.out.println("S-a realizat creditul "+
-                    denumire+" in valoare de "+
-                    numarLuni+' '+moneda+
-                    " pentru "+numarLuni+" luni.");
+        if(this.credit.getMoneda().equalsIgnoreCase("RON")){
+            this.credit.realizeazaCredit();
         }else{
             System.out.println("Nu se poate realiza credit decat in RON.");
         }
+    }
+
+    @Override
+    public String getMoneda() {
+        return this.credit.getMoneda();
     }
 }
